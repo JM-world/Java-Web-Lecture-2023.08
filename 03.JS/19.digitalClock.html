@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>digital clock </title>
+<script>
+    function twoDigit(num) {
+        return ( num < 10); ? '0' + sum + String(num);
+    }
+    function myDatetime(dt) {
+        return `${dt.getFullYear()}-${twoDigit(dt.getMonth()+1)}-${twoDigit(dt.getDate())} ` + 
+                 `${twoDigit(dt.getHours())}:${twoDigit(dt.getMinutes())}:${twoDigit(dt.getSecond())} `; 
+    }
+    
+</script>
+</head>
+<body>
+    
+</body>
+</html>
