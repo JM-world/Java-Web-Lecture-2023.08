@@ -9,21 +9,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
+<body class="bg-dark">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand " style="font-size: larger; font-weight: 700; color: #0fec08;"><img src="img/jm.jpg"
+            <a class="navbar-brand " style="font-size: larger; font-weight: 700; color: #0a9905;"><img src="img/jm.jpg"
                     height="36"></a>
             <ul class="navbar-nav me-auto">
                 <ul class="navbar-nav">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="https://github.com/linxiangkaiho" target="_blank">GitHub</a>
+                    <li class="nav-item navbar-dark">
+                        <a class="nav-link text-success" href="https://github.com/linxiangkaiho" target="_blank"
+                            style="font-size: large; font-weight: 700;">GitHub</a>
+
+                    </li>
+                    <li class="nav-item navbar-dark">
+                        <a class="nav-link text-success" href="https://www.instagram.com/hayanpage/" target="_blank"
+                            style="font-size: large; font-weight: 700;">Instagram</a>
                     </li>
                 </ul>
             </ul>
             <div class="dropdown p-4">
-                <button type="button" class="btn dropdown-toggle" style="background-color: #0fec08;" data-bs-toggle="dropdown">
-                    site move
+                <button type="button" class="btn dropdown-toggle" style="background-color: #0a9905;"
+                    data-bs-toggle="dropdown">
+                    site move 
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="https://www.google.com" target="_blank">Google</a></li>
@@ -36,12 +43,99 @@
 
         </div>
     </nav>
-    <div class="container-fluid p-3 bg-primary text-white text-center" style="height: 120px;">
-        <h1>My Bootstrap page</h1>
-        <p>Tables</p>
+    <div class="container-fluid p-3  text-white text-center" style="height: 30pt; background-color: #0a9905;">
+        <div class="container mt-5 p-3 border border-success bg-dark">
+            <div class="row">
+                <div class="col">
+                    <div class="card bg-dark  text-white" style="width:100%">
+                        <img class="card-img-top img-thumbnail" src="img/jmprofile.jpg" alt="Card image"
+                            style="width:100%">
+                        <div class="card-body border border-success">
+                            <h4 class="card-title">정 종 문</h4>
+                            <p class="card-text">Hello<br> I'm Corinne, who's been studying<br>coding for a little over
+                                a month. <br>I look forward to your kind cooperation.</p>
+                            <a href="#" class="btn" style="background-color: #0a9905;">See Profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="container mt-4 border border-success p-3 ">
+
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-white">
+                                <h2 style="color: #0a9905;"> My Favorite Foods </h2>
+                                <ul class="list-group">
+                                    <li class="list-group-item bg-success text-white">돈 까 스</li>
+                                    <li class="list-group-item bg-success text-white">마 라 탕</li>
+                                    <li class="list-group-item bg-success text-white">떡 볶 이</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><br>
+                    <div id="demo" class="carousel slide border border-success p-3" data-bs-ride="carousel">
+                        <ul class="list-group mb-3">
+                            <li class="list-group-item list-group-item-white">
+                                <h3 style="color: #0a9905; "> My Favorite Characters </h3>
+                            </li>
+                        </ul>
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/sinamo.jpg" alt="sinamo" class="d-block" style="width:100%">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/kuromi.jpg" alt="kuromi" class="d-block" style="width:100%">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/mymelody.jpg" alt="mymelody" class="d-block" style="width:100%">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col">
+                    <br><br>
+                    <div class="container mt-5 border border-success p-3 ">
+
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-white">
+                                <h2 style="color: #0a9905;"> My Daily Routine </h2>
+                            </li>
+
+                            <li class="list-group-item list-group-item-success">06:30 기상</li>
+                            <li class="list-group-item list-group-item-success">07:10 버스 승차</li>
+                            <li class="list-group-item list-group-item-success">08:50 영등포 도착</li>
+                            <li class="list-group-item list-group-item-success">08:55 메가커피 출첵</li>
+                            <li class="list-group-item list-group-item-success">09:00 학원 출첵</li>
+                            <li class="list-group-item list-group-item-success">12:50 점심시간</li>
+                            <li class="list-group-item list-group-item-success">13:50 오후 시작</li>
+                            <li class="list-group-item list-group-item-success">17:40 수업 끝</li>
+                            <li class="list-group-item list-group-item-success">20:00 자습 and 복습</li>
+                            <li class="list-group-item list-group-item-success">20:30 버스 승차</li>
+                            <li class="list-group-item list-group-item-success">22:00 집 도착</li>
+                            <li class="list-group-item list-group-item-success">24:00 Dreams Come True</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="container mt-5 border">
-    </div>
+    
 </body>
 
 </html>
