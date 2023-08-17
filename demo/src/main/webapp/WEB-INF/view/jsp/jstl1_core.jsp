@@ -53,7 +53,7 @@
 			</c:if>
 			</td>
 			<td>	<%-- 첫번째줄 배경색은 yellow, 마지막줄은 cyan --%>
-			<c:if test= "${loop.first}">
+			<c:if test= "${otAloop.first}">
 				<span style="background-color: yellow;">${member.name}</span> 
 			</c:if>
 			<c:if test= "${loop.last}">
