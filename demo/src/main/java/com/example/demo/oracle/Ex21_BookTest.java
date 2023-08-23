@@ -2,7 +2,7 @@ package com.example.demo.oracle;
 
 import java.util.List;
 
-public class Ex12_BookMain {
+public class Ex21_BookTest {
 
 	public static void main(String[] args) {
 		BookDao bDao = new BookDao();
