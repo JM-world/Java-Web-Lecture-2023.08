@@ -20,7 +20,7 @@ public class BlogTest {
 //		bDao.updateBlog(blog);
 		
 		
-		bDao.deleteBlog(5);
+//		bDao.deleteBlog(5);
 //		bDao.increaseViewCount(1); bDao.increaseViewCount(3);
 //		bDao.increaseViewCount(1); bDao.increaseViewCount(4);
 		
