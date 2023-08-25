@@ -8,12 +8,20 @@
 <html>
 
 <head>
-<%@ include file="./common/head.jspf"%>
-<style>
-td, th {
-	text-align: center;
-}
-</style>
+	<%@ include file="./common/head.jspf"%>
+	<style>
+		td, th {
+			text-align: center;
+		}
+	</style>
+	<script>
+		function search() {
+			let field = document.getElementById('field').value;
+			let query = document.getElementById('query').value;
+			//console.log("search()", field, query);
+			location.href = '/demo/blog/list?f=' + field + '&q=' + query;
+		}
+	</script>
 </head>
 
 <body>
@@ -26,11 +34,32 @@ td, th {
 
 			<!-- -----------------main----------------- -->
 			<div class="col-9">
-				<h3>
-					<strong>블로그 목록</strong> <span style="font-size: 0.6em;"> 
-					<a href="/demo/blog/write"><i class="ms-5 fa-solid fa-pen-to-square"></i>쓰기</a>
-					</span>
-				</h3>
+				<table class="table table-sm table-borderless">
+					<tr>
+						<td style="width: 50%; text-align: left;">
+							<h3>
+								<strong>블로그 목록</strong> <span style="font-size: 0.6em;"> 
+								<a href="/demo/blog/write"><i class="ms-5 fa-solid fa-pen-to-square"></i>쓰기</a>
+								</span>
+							</h3>
+						</td>
+						<td style="width: 15%;">
+							<select class="form-select" id="field">
+		                        <option value="title" ${field eq 'title' ? 'selected' : '' }>제목</option>
+		                        <option value="content" ${field eq 'content' ? 'selected' : '' }>내용</option>
+		                        <option value="penName" ${field eq 'penName' ? 'selected' : '' }>필명</option>
+	                    	</select>
+						</td>
+						<td style="width: 27%;">
+							<input class="form-control" placeholder="검색할 단어" 
+								id="query" value="${query}" onkeyup="if(window.event.keyCode==13) search()">
+						</td>						   <!-- onkeyup : 13번=엔터키 입력시 검색가능 -->
+						<td style="width: 8%;">
+							<button class="btn btn-success" onclick="search()">검색</button>
+						</td>
+					</tr>
+					
+				</table>
 			<hr>
 			<table class="table">
 				<tr class="table-secondary">
